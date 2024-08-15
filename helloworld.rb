@@ -51,9 +51,41 @@ obj1.publicName
 
 # conditions
 
-x = 1
+x = 3
 if x < 2 
     puts "less than 2"
+elsif x = 3
+    puts "is 3"
 else
-    puts "higher than 2"
+    puts "higher than 3"
 end
+
+# switch statement
+
+age = 15
+
+case age 
+
+when 0..4 
+    puts "0-4"
+when 5..14
+    puts "5-14"
+when 15..18
+    puts "15-18"
+else 
+    puts ">18"
+end
+
+# loops
+
+i = 0
+value = 5
+
+while i < value do
+    puts i
+    i += 1
+end
+
+for i in (0..5)
+    puts i
+end 
