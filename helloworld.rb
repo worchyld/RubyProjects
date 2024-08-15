@@ -107,11 +107,44 @@ end
 puts sum(3,5)
 puts totalup(4,8,1)
 
-someArray = Array.new
+#someArray = Array.new
+#someArray << 123
+#someArray << "abc"
 
-someArray << 123
-someArray << "abc"
+someArray = Array.new(5) { |e| e=e*2 }
 
 puts "#{someArray}"
 puts someArray.size
 
+lastItem = someArray.pop
+puts lastItem
+
+# Hashes (key-value pairs)
+
+hash = {
+    '1' => 'ruby',
+    '2' => 'php',
+    '3' => 'rust',
+}
+puts "#{hash}"
+puts hash.size
+
+# all keys
+puts "#{hash.keys}"
+
+# all values
+puts "#{hash.values}"
+puts hash.has_key?('4')
+puts hash.has_value?('java')
+
+hash.delete('1')
+puts "#{hash}"
+
+# date and time
+time = Time.now
+
+puts time.year
+puts time.month
+puts time.day
+
+puts time.strftime("%Y-%m-%d")
