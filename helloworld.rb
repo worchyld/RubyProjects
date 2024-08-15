@@ -35,10 +35,25 @@ class SecondClass
     def makeName
         puts "Hello #{@name}"
     end
+
+    public
+    def publicName
+        puts "Public name"
+    end
 end
 
 obj = FirstClass.new()
 obj.displayDetails
 
 obj1 = SecondClass.new("Mike Tyson")
-obj1.displayDetails()    
+obj1.displayDetails()
+obj1.publicName
+
+# conditions
+
+x = 1
+if x < 2 
+    puts "less than 2"
+else
+    puts "higher than 2"
+end
