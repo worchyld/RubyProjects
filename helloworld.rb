@@ -41,4 +41,4 @@ obj = FirstClass.new()
 obj.displayDetails
 
 obj1 = SecondClass.new("Mike Tyson")
-obj1.displayDetails()
+obj1.displayDetails()    
