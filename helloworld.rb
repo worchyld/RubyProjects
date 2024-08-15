@@ -18,20 +18,27 @@ class FirstClass
     end
 end
 
+# types of access modifers
+# public
+# private
+
 class SecondClass
     def initialize(name)
         @name = name
     end
-    
+
     def displayDetails
-        puts "Hello #@name"
+        makeName
+    end
+    
+    private 
+    def makeName
+        puts "Hello #{@name}"
     end
 end
 
 obj = FirstClass.new()
-obj.displayDetails()
-obj.displayDetails()
-obj.displayDetails()
+obj.displayDetails
 
-obj1 = SecondClass.new("mike")
-obj1.displayDetails
+obj1 = SecondClass.new("Mike Tyson")
+obj1.displayDetails()
