@@ -108,4 +108,10 @@ puts sum(3,5)
 puts totalup(4,8,1)
 
 someArray = Array.new
+
+someArray << 123
+someArray << "abc"
+
 puts "#{someArray}"
+puts someArray.size
+
