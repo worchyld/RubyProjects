@@ -148,3 +148,34 @@ puts time.month
 puts time.day
 
 puts time.strftime("%Y-%m-%d")
+
+
+class Geek 
+   
+    # defining instance method getAge 
+    def getAge(n) 
+          
+      # instance variable      
+      @geekAge = n 
+    end  
+       
+    # defining instance method incrementAge 
+    def incrementAge()  
+        @geekAge +=1
+    end
+
+    # defining instance method displayDetails 
+    def displayDetails()  
+        puts "Geek age is #@geekAge"
+    end   
+
+end
+
+# creating an object of class Geeks 
+obj = Geek.new
+
+# calling the instance methods of class Geeks 
+obj.getAge(20) 
+obj.displayDetails() 
+obj.incrementAge() 
+obj.displayDetails() 
