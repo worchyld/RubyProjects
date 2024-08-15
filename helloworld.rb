@@ -106,3 +106,6 @@ end
 
 puts sum(3,5)
 puts totalup(4,8,1)
+
+someArray = Array.new
+puts "#{someArray}"
