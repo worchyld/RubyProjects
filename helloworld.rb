@@ -89,3 +89,20 @@ end
 for i in (0..5)
     puts i
 end 
+
+def sum(a, b)
+    total = a + b
+    return total
+end
+
+def totalup(*args)
+    sum = 0
+    # go through each argument
+    args.each do |value|
+        sum += value
+    end
+    return sum
+end
+
+puts sum(3,5)
+puts totalup(4,8,1)
